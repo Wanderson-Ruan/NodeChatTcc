@@ -1,0 +1,27 @@
+<ion-header>
+
+</ion-header>
+
+    <div align="center">
+    <img style="width:256px; height:256px;"src="https://firebasestorage.googleapis.com/v0/b/ionic4tcc.appspot.com/o/meu%20chat.png?alt=media&token=a8fe9a3e-e48e-4d3b-929f-3aa34554157e"/>
+    </div>
+    
+  <ion-item>
+  <ion-label position="floating" > Login</ion-label>
+  <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating" > Senha</ion-label>
+  <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
+</ion-item>
+<ion-button color="tertiary" (click)="onSubmitLogin()" expand="block">Entrar</ion-button>
+<p style="color:red;"text-center routerLink="/registro">Não possui conta ? Clique aqui</p>
+
+<div align="center">
+<ion-footer>
+  <p style="font-size: 11px;">Copyright&copy; 2019 - Trabalho de Conclusão de Curso </p>
+  <a style = "color:red; font-size: 11px;" href="https://web.facebook.com/ruanalmeida2013" target="blank">Meu Facebook</a>
+
+</ion-footer>
+</div>
+

@@ -1,0 +1,37 @@
+<ion-header>
+    <div align="center">
+  <ion-toolbar color="tertiary">
+    <ion-button slot="end" fill="clear" (click)="presentActionSheet()">
+      <ion-icon style="color:#fff" name="menu"></ion-icon>
+    </ion-button>
+    <ion-title>
+      Escolha um Canal e faça novas amizades
+    </ion-title>
+  </ion-toolbar>
+  </div>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+      <ion-item *ngFor ="let chat of chatRooms" (click)="openChat(chat)">
+        <ion-avatar slot="start">
+          <ion-img [src]="chat.img"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <h2> <b>{{chat.name}}</b> </h2>
+          <p>{{chat.description}}</p>
+        </ion-label>
+      </ion-item>
+    
+  </ion-list>
+
+  
+</ion-content>
+<div align="center">
+    <ion-footer>
+      <p style="font-size: 11px;">Copyright&copy; 2019 - Trabalho de Conclusão de Curso </p>
+      <a style = "color:red; font-size: 11px;" href="https://web.facebook.com/ruanalmeida2013" target="blank">Meu Facebook</a>
+    
+    </ion-footer>
+    </div>
